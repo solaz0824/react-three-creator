@@ -4,7 +4,7 @@
 <img width="1433" alt="스크린샷 2023-03-12 19 01 32" src="https://user-images.githubusercontent.com/50446830/224563687-5a34bd6a-4b3e-4abe-80d3-3080505b81b4.png">
 
 ## Getting Started
------
+
 1. Clone the repository
 ```
 $ git clone https://github.com/solaz0824/react-three-creator.git
@@ -18,7 +18,7 @@ $ npm install
 $ npm start
 ```
 ## Dependencies
----
+
 - [React](https://reactjs.org/)
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 - [Drei](https://github.com/pmndrs/drei)
@@ -28,7 +28,7 @@ $ npm start
 
 
 ## File Structure
----
+
 ```
 📦 public
  ┣ 📜index.html
@@ -44,4 +44,8 @@ $ npm start
  ┣ 📜index.js
  ```
 
+## Process 
+
+[Project Link](https://github.com/users/solaz0824/projects/1/views/1)
+![스크린샷 2023-03-12 19 17 04](https://user-images.githubusercontent.com/50446830/224564306-352b3edb-4462-4518-afe2-fe29d0fc60d5.png)
 
