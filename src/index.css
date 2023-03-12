@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
 * {
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -17,9 +19,4 @@ body,
   user-select: none;
   /* overflow: hidden; */
   background: #272727;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-    segoe ui, arial, sans-serif;
 }

@@ -1,10 +1,7 @@
 import React, { Suspense, useState } from "react";
 import "./App.css";
 
-import { Canvas, useLoader } from "@react-three/fiber";
-import { AxesHelper, TextureLoader } from "three";
-
-import texture from "./images/texture.jpeg";
+import { Canvas } from "@react-three/fiber";
 
 import { OrbitControls, Stars, Text } from "@react-three/drei";
 import { ColorPicker, useColor } from "react-color-palette";
@@ -16,10 +13,8 @@ import Controls from "./components/Controls";
 import Draggable from "./components/Draggable";
 
 function App() {
-  const textureMap = useLoader(TextureLoader, texture);
   const [color, setColor] = useColor("hex", "#74e8eb");
   const [distort, setDistort] = useState(0.5);
-  const [map, setMap] = useState(textureMap);
   const [speed, setSpeed] = useState(1.5);
   const [roughness, setRoughness] = useState(0);
   const [scale, setScale] = useState(1);

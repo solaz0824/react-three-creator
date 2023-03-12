@@ -19,9 +19,12 @@ export default function Controls({ controls }) {
     setYPosition,
     setZPosition,
   } = controls;
+
   return (
     <div className="controls">
-      <h2>Selected Object: {shape.toUpperCase()}</h2>
+      <div className="objectTitle">
+        <h2>{shape.toUpperCase()}</h2>
+      </div>
       <div className="controlGroup">
         {shape === "sphere" ? (
           <>
@@ -95,32 +98,28 @@ export default function Controls({ controls }) {
             </div>
           </>
         )}
-        <div className="control">
-          <label>Shape</label>
-          <div>
-            <label htmlFor="sphere">
-              Sphere
-              <input
-                value="sphere"
-                onChange={(e) => setShape(e.target.value)}
-                checked={shape === "sphere"}
-                id="sphere"
-                type="radio"
-              />
-            </label>
-          </div>
-          <div>
-            <label htmlFor="box">
-              Box
-              <input
-                value="box"
-                onChange={(e) => setShape(e.target.value)}
-                checked={shape === "box"}
-                id="box"
-                type="radio"
-              />
-            </label>
-          </div>
+      </div>
+      <div className="control shapeControl">
+        <label>Shape</label>
+        <div>
+          <input
+            value="sphere"
+            onChange={(e) => setShape(e.target.value)}
+            checked={shape === "sphere"}
+            id="sphere"
+            type="radio"
+          />
+          <label htmlFor="sphere">Sphere</label>
+        </div>
+        <div>
+          <input
+            value="box"
+            onChange={(e) => setShape(e.target.value)}
+            checked={shape === "box"}
+            id="box"
+            type="radio"
+          />
+          <label htmlFor="box">Box</label>
         </div>
       </div>
     </div>
