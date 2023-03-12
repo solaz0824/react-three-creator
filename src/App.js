@@ -14,7 +14,7 @@ import Draggable from "./components/Draggable";
 
 function App() {
   const [color, setColor] = useColor("hex", "#74e8eb");
-  const [distort, setDistort] = useState(0.5);
+  const [distort, setDistort] = useState(0);
   const [speed, setSpeed] = useState(1.5);
   const [roughness, setRoughness] = useState(0);
   const [scale, setScale] = useState(1);
